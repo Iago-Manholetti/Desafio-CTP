@@ -1,0 +1,30 @@
+#Recebe os Estados
+import Estados
+
+#Lista com os cursos
+Cursos = ["A01 -AI e Machine Learning", "A02 -Business Intelligence", "A03 -Governança em TI", "A04 -Programação Python", "A05 -Programação JAVA"]
+
+#ATENCAO
+#X RECEBE O INPUT DO USUARIO, QUE DEVE ESTAR VINDO DE OUTROO GRUPO
+#E ESTÁ SENDO PASSADO COMO PARAMETRO NO "Estado.estadoRegião(x)"
+x = "MT"
+
+if Estados.estadoRegiao(x) == "NORDESTE":
+    print("\nOs cursos disponiveis são: \n\n{} \n{}".format(Cursos[0],Cursos[1]))
+elif Estados.estadoRegiao(x) == "NORTE":
+    print("\nOs cursos disponiveis são: \n\n{} \n{}".format(Cursos[0],Cursos[3]))
+
+elif Estados.estadoRegiao(x) == "SUDESTE" and x == "RJ":
+    print("\nOs cursos disponiveis são: \n\n{} \n{}".format(Cursos[0],Cursos[3]))
+
+elif Estados.estadoRegiao(x) == "SUDESTE":
+    print("\nOs cursos disponiveis são: \n\n{} \n{}\n{}".format(Cursos[0],Cursos[3],Cursos[4]))
+
+elif Estados.estadoRegiao(x) == "SUL" :
+    print("\nOs cursos disponiveis são: \n\n{} \n{}".format(Cursos[0],Cursos[3]))
+
+elif Estados.estadoRegiao(x) == "CENTRO-OESTE" or x == "DF" :
+    print("\nOs cursos disponiveis são: \n\n{} \n{}".format(Cursos[0],Cursos[2]))
+
+
+
